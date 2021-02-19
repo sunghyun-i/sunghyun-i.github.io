@@ -1,29 +1,165 @@
-ul{
-    list-style: none;
+body{
     margin: 0;
 }
 
-li a{
-    padding: 0 0;
+a{
+    text-decoration: none;
 }
 
-@media(min-width : 992px){
-    #sideNav{
-        text-align: center;
-        position: fixed;
+ul, ol, li{
+    padding: 0;
+}
+
+h1{
+    font-size: 1.25rem;
+}
+
+.banner{
+    background-color: black;
+    width: 100%;
+}
+
+.banner .banner-nav{
+    display: flex;
+    align-items: center;
+}
+
+.banner .banner-nav .profile_image{
+    display: none;
+}
+
+.banner .banner-nav .headline{
+    margin: 1.5rem;
+    color: white;
+}
+
+.banner .banner-nav .banner-item-div{
+    
+}
+
+.banner .banner-nav .banner-item-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.banner .banner-nav .banner-item-list li{
+    padding: 0.325rem;
+    font-size: 0.825rem;
+}
+
+/*메뉴 글자 조절*/
+.banner .banner-nav a{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+@media(min-width: 768px){/*수정할것 - 태블릿모드*/}
+
+@media(min-width: 992px){
+    .banner{
         left: 0;
         top: 0;
-        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        position: fixed;
         height: 100vh;
+        width: 30vw;
+        padding: 0;
+        margin: auto auto;
     }
 
-    #sideNav .container-fluid{
+    .banner .banner-nav{
         display: flex;
         flex-direction: column;
+        text-align: inherit;
+        align-items: inherit;
+        margin: auto auto;
     }
 
-    #sideNav .container-fluid #navbarSupportedContent .navbar-nav{
+    .banner .banner-nav .profile_image{
+        display: block;
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .banner .banner-nav .profile_image img{
+        width: 100%;
+        border-radius: 50%;
+        border: 0.5rem solid white;
+    }
+    
+    .banner .banner-nav .headline{
+        color: white;
+    }
+    .banner .banner-nav .banner-item-list{
         display: flex;
         flex-direction: column;
+        padding: 1.725rem;
+    }
+
+    .banner .banner-nav .banner-item-list .banner-item{
+        font-size: 1.525rem;
+        padding: 1.325rem;
+    }
+
+    .section-list{
+        top: 0;
+        right: 0;
+        width: 70vw;
+        display: block;
+        float: right;
+        margin: auto 0;
+    }
+}
+
+.resume-section{
+    height: 100vh;
+    padding: 5rem;
+}
+
+.about-h1{
+    display: flex;
+}
+
+.sns-content-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.sns-content{
+    padding: 1.25rem;
+    width: 40px;
+    height: 40px;
+}
+
+.sns-content img{
+    width: 100%;
+}
+
+@media(min-width: 768px){
+    /*수정할것 - 태블릿모드*/
+}
+
+@media(min-width: 992px){
+    .resume-section{
+        padding: 10rem;
+    }
+
+    .about-h1-1{
+        font-size: 2.525rem;
+    }
+    .about-h1-2{
+        font-size: 2.525rem;
+    }
+
+    .about-p{
+        font-size: 1.725rem;
+    }
+
+    .sns-content{
+        width: 100px;
+        height: 100px;
     }
 }
